@@ -1,4 +1,4 @@
-# Time Series Analysis — Cotton Seed Price (Mato Grosso, Brazil)
+# Time Series Analysis — Cottonseed Price (Mato Grosso, Brazil)
 
 Modeling the historical price series of cotton seed in Mato Grosso, aiming to understand its dynamics and forecast future values. Project P2 for the course **ME607 — Time Series** (IMECC/Unicamp).
 
