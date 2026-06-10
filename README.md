@@ -1,10 +1,10 @@
 # Time Series Analysis — Cottonseed Price (Mato Grosso, Brazil)
 
-Modeling the historical price series of cotton seed in Mato Grosso, aiming to understand its dynamics and forecast future values. Project P2 for the course **ME607 — Time Series** (IMECC/Unicamp).
+Modeling the historical price series of cottonseed in Mato Grosso, aiming to understand its dynamics and forecast future values. Project P2 for the course **ME607 — Time Series** (IMECC/Unicamp).
 
 ## About
 
-Cotton seed is a by-product of cotton ginning, and its price follows the cotton harvest cycle in Mato Grosso, Brazil's largest producer. This project analyzes the monthly commercialization price series (source: IMEA/MT, Jan/2023 to Apr/2026) and fits a model for short-term forecasting.
+Cottonseed is a by-product of cotton ginning, and its price follows the cotton harvest cycle in Mato Grosso, Brazil's largest producer. This project analyzes the monthly commercialization price series (source: IMEA/MT, Jan/2023 to Apr/2026) and fits a model for short-term forecasting.
 
 The central question is: **can we model and forecast the cotton seed price from its own history?**
 
