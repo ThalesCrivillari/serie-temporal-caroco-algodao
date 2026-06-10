@@ -23,8 +23,8 @@ The **SARIMA(1,1,0)(1,0,0)₁₂** is the main model, selected via information c
 ```
 ├── caroco_p2.csv              # Data (monthly price by crop season)
 ├── programa_p2.ipynb          # Notebook reproducing the full analysis
-├── relatorio_p2.tex           # Report (LaTeX, in Portuguese)
-├── fluxograma_metodologia.png # Methodology flowchart
+├── relatorio_p2.pdf           # Report (LaTeX, in Portuguese)
+├── fluxograma.pdf             # Methodology flowchart
 └── README.md
 ```
 
