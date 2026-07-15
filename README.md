@@ -10,13 +10,13 @@ The central question is: **can we model and forecast the cotton seed price from 
 
 ## Models
 
-| Model | Role | Method |
-|-------|------|--------|
-| **SARIMA** | Main model | Maximum likelihood |
-| **Hybrid SARIMA→BTVC** | Complement | MCMC (PyMC) |
-| **Hierarchical (by crop season)** | Complement | MCMC (PyMC) |
+| Model                     | Role        | Method             |
+| ------------------------- | ----------- | ------------------ |
+| **SARIMA**                | Main model  | Maximum likelihood |
+| **Intervention analysis** | Extension   | Maximum likelihood |
+| **Hybrid SARIMA→BTVC**    | Complement  | MCMC (PyMC)        |
 
-The **SARIMA(1,1,0)(1,0,0)₁₂** is the main model, selected via information criteria (AICc). The complementary models explore, respectively, time-varying coefficients and the price difference between crop seasons.
+The **SARIMA(1,1,0)(1,0,0)₁₂** is the main model, selected via information criteria (AICc). An intervention analysis identifies a structural break (a step in Aug/2025) associated with the end of the crop-season overlap. The hybrid complement explores time-varying coefficients for adapting to regime changes.
 
 ## Repository structure
 
@@ -42,10 +42,9 @@ During crop-season transitions there are two rows for the same date (one per sea
 
 1. Open `programa_p2.ipynb` in [Google Colab](https://colab.research.google.com/)
 2. Run the first cell to install dependencies (`pymc`, `arch`, `statsmodels`)
-3. When prompted, upload `caroco_p2.csv`
-4. Run all cells (`Runtime → Run all`)
+3. Run all cells (`Runtime → Run all`)
 
-The notebook produces all figures and numerical results. MCMC estimation of the Bayesian models takes a few minutes.
+The notebook reads the data directly from this repository, produces all figures and numerical results. MCMC estimation of the Bayesian model takes a few minutes.
 
 ## Methodology
 
@@ -54,8 +53,9 @@ The notebook produces all figures and numerical results. MCMC estimation of the 
 3. Stationarity testing (ADF and KPSS)
 4. SARIMA identification and estimation
 5. Residual diagnostics
-6. Out-of-sample forecasting exercise
-7. Complementary models (hybrid and hierarchical)
+6. Intervention analysis (structural break)
+7. Out-of-sample forecasting exercise
+8. Complementary model (hybrid SARIMA→BTVC)
 
 ## Tech stack
 
